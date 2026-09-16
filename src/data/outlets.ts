@@ -1,0 +1,45 @@
+import { Outlet } from '../types';
+
+export const DEMO_OUTLETS: Outlet[] = [
+  {
+    id: 'out-01',
+    name: 'Koh Timo - Tebet Flagship (DEMO)',
+    area: 'Jakarta Selatan',
+    address: 'Jl. Tebet Timur Dalam Raya No. 42 (Sample Demo Location), Jakarta Selatan',
+    hours: '10:00 - 22:00 WIB (Setiap Hari)',
+    phone: '+62 812-3456-7890',
+    mapsUrl: 'https://maps.google.com/?q=Tebet+Jakarta+Selatan',
+    badge: 'Flagship Store',
+    isFlagship: true,
+  },
+  {
+    id: 'out-02',
+    name: 'Koh Timo - Kelapa Gading Hub (DEMO)',
+    area: 'Jakarta Utara',
+    address: 'Ruko Boulevard Raya Blok WA-2 No. 15 (Sample Demo Location), Kelapa Gading',
+    hours: '10:00 - 22:00 WIB (Setiap Hari)',
+    phone: '+62 812-3456-7891',
+    mapsUrl: 'https://maps.google.com/?q=Kelapa+Gading+Jakarta+Utara',
+    badge: 'Takeaway & Dine-In',
+  },
+  {
+    id: 'out-03',
+    name: 'Koh Timo - Senopati Express (DEMO)',
+    area: 'Jakarta Selatan',
+    address: 'Jl. Suryo No. 88 (Sample Demo Location), Kebayoran Baru, Jakarta Selatan',
+    hours: '09:00 - 23:00 WIB (Buka Sampai Malam)',
+    phone: '+62 812-3456-7892',
+    mapsUrl: 'https://maps.google.com/?q=Senopati+Jakarta+Selatan',
+    badge: 'Express Cloud Kitchen',
+  },
+  {
+    id: 'out-04',
+    name: 'Koh Timo - Dipatiukur Student Hub (DEMO)',
+    area: 'Bandung',
+    address: 'Jl. Dipatiukur No. 56 (Sample Demo Location), Coblong, Kota Bandung',
+    hours: '10:00 - 22:00 WIB (Setiap Hari)',
+    phone: '+62 812-3456-7893',
+    mapsUrl: 'https://maps.google.com/?q=Dipatiukur+Bandung',
+    badge: 'Favorit Mahasiswa',
+  },
+];

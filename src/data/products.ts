@@ -1,0 +1,321 @@
+import { Product } from '../types';
+import heroBowlImg from '../assets/images/hero_ricebowl_1788924042277.jpg';
+import promoImg from '../assets/images/promo_ricebowl_1788924056813.jpg';
+
+export const HERO_FOOD_IMAGE = heroBowlImg;
+export const PROMO_FOOD_IMAGE = promoImg;
+
+export const DEMO_PRODUCTS: Product[] = [
+  {
+    id: 'kt-01',
+    name: 'Ricebowl Ayam Sambal Matah Timo',
+    category: 'ricebowl',
+    subCategory: 'ayam',
+    description: 'Ayam krispi gurih dibalut racikan sambal matah Bali segar wangi serai, disajikan dengan nasi hangat dan telur ceplok omega.',
+    price: 28000,
+    formattedPrice: 'Rp 28.000',
+    image: heroBowlImg,
+    isBestSeller: true,
+    spiceLevel: 2,
+    rating: 4.9,
+    salesCount: '2.8k+ terjual',
+    tags: ['Best Seller', 'Pedas Segar', 'Favorit'],
+    options: [
+      {
+        name: 'Tingkat Pedas Sambal Matah',
+        required: true,
+        choices: [
+          { name: 'Pedas Sedang (Normal)', extraPrice: 0 },
+          { name: 'Pedas Nagih (+2x Cabai)', extraPrice: 0 },
+          { name: 'Pedas Juara (+3x Cabai)', extraPrice: 2000 },
+        ],
+      },
+      {
+        name: 'Pilihan Telur',
+        choices: [
+          { name: 'Telur Mata Sapi Setengah Matang', extraPrice: 0 },
+          { name: 'Telur Mata Sapi Matang Penuh', extraPrice: 0 },
+          { name: 'Telur Dadar Krispi', extraPrice: 2000 },
+        ],
+      },
+      {
+        name: 'Extra Topping',
+        choices: [
+          { name: 'Tambah Kulit Ayam Krispi', extraPrice: 6000 },
+          { name: 'Tambah Ekstra Sambal Matah', extraPrice: 4000 },
+          { name: 'Tambah Nasi Gurih Pulen', extraPrice: 4000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-02',
+    name: 'Ricebowl Sapi Yakiniku Onsen',
+    category: 'ricebowl',
+    subCategory: 'sapi',
+    description: 'Irisan daging sapi impor lembut dimasak saus yakiniku gurih manis karamel dengan bawang bombay harum dan telur lembut.',
+    price: 36000,
+    formattedPrice: 'Rp 36.000',
+    originalPrice: 42000,
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80',
+    isBestSeller: true,
+    isPromo: true,
+    spiceLevel: 0,
+    rating: 4.9,
+    salesCount: '3.4k+ terjual',
+    tags: ['Best Seller', 'Daging Impor', 'Gurih Manis'],
+    options: [
+      {
+        name: 'Pilihan Tingkat Kematangan Telur',
+        choices: [
+          { name: 'Onsen Egg Lembut Meleleh', extraPrice: 0 },
+          { name: 'Telur Ceplok Omega', extraPrice: 0 },
+        ],
+      },
+      {
+        name: 'Extra Topping',
+        choices: [
+          { name: 'Extra Double Beef (+50g)', extraPrice: 14000 },
+          { name: 'Taburan Biji Wijen & Daun Bawang', extraPrice: 0 },
+          { name: 'Ekstra Saus Yakiniku Timo', extraPrice: 3000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-03',
+    name: 'Ricebowl Ayam Telur Asin Creamy',
+    category: 'ricebowl',
+    subCategory: 'ayam',
+    description: 'Potongan ayam renyah dilumuri saus kuning telur asin asli yang creamy, gurih harum daun kari dan irisan cabai merah.',
+    price: 30000,
+    formattedPrice: 'Rp 30.000',
+    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80',
+    isBestSeller: true,
+    spiceLevel: 1,
+    rating: 4.8,
+    salesCount: '1.9k+ terjual',
+    tags: ['Best Seller', 'Creamy', 'Favorit'],
+    options: [
+      {
+        name: 'Pilihan Saus',
+        choices: [
+          { name: 'Creamy Normal (Standar Gurih)', extraPrice: 0 },
+          { name: 'Extra Banjir Saus Telur Asin', extraPrice: 5000 },
+        ],
+      },
+      {
+        name: 'Extra Topping',
+        choices: [
+          { name: 'Telur Ceplok Omega', extraPrice: 4000 },
+          { name: 'Kulit Ayam Krispi', extraPrice: 6000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-04',
+    name: 'Ricebowl Sapi Cabe Ijo Gurih',
+    category: 'ricebowl',
+    subCategory: 'sapi',
+    description: 'Daging sapi empuk juicy dimasak tumis cabai hijau segar racikan resep rahasia Koh Timo. Gurih, sedikit pedas, dan harum.',
+    price: 38000,
+    formattedPrice: 'Rp 38.000',
+    image: 'https://images.unsplash.com/photo-1543826173-70651703c5a4?auto=format&fit=crop&w=800&q=80',
+    isBestSeller: true,
+    spiceLevel: 2,
+    rating: 4.9,
+    salesCount: '2.1k+ terjual',
+    tags: ['Spesial Sapi', 'Pedas Nikmat'],
+    options: [
+      {
+        name: 'Pilihan Tingkat Pedas',
+        choices: [
+          { name: 'Pedas Pas (Rekomendasi)', extraPrice: 0 },
+          { name: 'Pedas Nendang', extraPrice: 2000 },
+        ],
+      },
+      {
+        name: 'Extra Topping',
+        choices: [
+          { name: 'Telur Dadar Krispi', extraPrice: 4000 },
+          { name: 'Kerupuk Kulit Timo', extraPrice: 5000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-05',
+    name: 'Ricebowl Ayam Geprek Bawang Timo',
+    category: 'ricebowl',
+    subCategory: 'ayam',
+    description: 'Ayam fillet krispi jumbo digeprek dengan sambal bawang panas wangi minyak kelapa. Bikin keringetan tapi bikin pengen nambah!',
+    price: 26000,
+    formattedPrice: 'Rp 26.000',
+    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 3,
+    rating: 4.8,
+    salesCount: '1.7k+ terjual',
+    tags: ['Super Pedas', 'Ayam Krispi'],
+    options: [
+      {
+        name: 'Pilihan Level Cabai Geprek',
+        required: true,
+        choices: [
+          { name: 'Level 1 (5 Cabai)', extraPrice: 0 },
+          { name: 'Level 3 (10 Cabai)', extraPrice: 0 },
+          { name: 'Level 5 (15 Cabai Bikin Nangis)', extraPrice: 3000 },
+        ],
+      },
+      {
+        name: 'Topping Keju',
+        choices: [
+          { name: 'Tanpa Keju', extraPrice: 0 },
+          { name: 'Lelehan Keju Mozzarella', extraPrice: 6000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-06',
+    name: 'Ricebowl Ayam Teriyaki Madu',
+    category: 'ricebowl',
+    subCategory: 'ayam',
+    description: 'Fillet ayam empuk berbalut saus teriyaki manis gurih beraroma madu asli, taburan biji wijen panggang, dan tumis sayur segar.',
+    price: 27000,
+    formattedPrice: 'Rp 27.000',
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 0,
+    rating: 4.7,
+    salesCount: '1.4k+ terjual',
+    tags: ['Ramah Anak', 'Manis Gurih'],
+    options: [
+      {
+        name: 'Pilihan Telur',
+        choices: [
+          { name: 'Telur Mata Sapi', extraPrice: 4000 },
+          { name: 'Tamagoyaki / Telur Gulung', extraPrice: 5000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-07',
+    name: 'Ricebowl Sapi Saus Lada Hitam',
+    category: 'ricebowl',
+    subCategory: 'sapi',
+    description: 'Daging sapi tumis dengan paprika tiga warna dan saus blackpepper pedas hangat khas Koh Timo yang meresap sempurna.',
+    price: 37000,
+    formattedPrice: 'Rp 37.000',
+    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 2,
+    rating: 4.8,
+    salesCount: '980+ terjual',
+    tags: ['Hangat Rempah', 'Daging Sapi'],
+    options: [
+      {
+        name: 'Tingkat Kepedasan Lada',
+        choices: [
+          { name: 'Blackpepper Standar', extraPrice: 0 },
+          { name: 'Ekstra Pedas Lada Hitam Kasar', extraPrice: 2000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-08',
+    name: 'Ricebowl Dori Krispi Sambal Dabu-Dabu',
+    category: 'ricebowl',
+    subCategory: 'ayam',
+    description: 'Ikan dori krispi keemasan tanpa duri disiram sambal dabu-dabu tomat segar asam pedas yang membangkitkan selera makan.',
+    price: 29000,
+    formattedPrice: 'Rp 29.000',
+    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 2,
+    rating: 4.7,
+    salesCount: '850+ terjual',
+    tags: ['Segar Gurih', 'Seafood'],
+  },
+  {
+    id: 'kt-09',
+    name: 'Kulit Ayam Krispi Gurih Timo',
+    category: 'snack',
+    description: 'Kulit ayam goreng super renyah kriuk tanpa minyak berlebih, dibumbui racikan rempah asin gurih khas Koh Timo.',
+    price: 15000,
+    formattedPrice: 'Rp 15.000',
+    image: 'https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 0,
+    rating: 4.9,
+    salesCount: '4.2k+ terjual',
+    tags: ['Snack Favorit', 'Super Kriuk'],
+    options: [
+      {
+        name: 'Pilihan Bumbu Tabur',
+        choices: [
+          { name: 'Original Gurih', extraPrice: 0 },
+          { name: 'Pedas Daun Jeruk', extraPrice: 1000 },
+          { name: 'Barbeque Asap', extraPrice: 1000 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-10',
+    name: 'Pangsit Goreng Mayo Timo (5 Pcs)',
+    category: 'snack',
+    description: 'Pangsit isi ayam udang padat dibungkus kulit renyah keemasan, disajikan dengan saus mayo spesial Koh Timo.',
+    price: 18000,
+    formattedPrice: 'Rp 18.000',
+    image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 0,
+    rating: 4.8,
+    salesCount: '1.6k+ terjual',
+    tags: ['Cemilan Asik', 'Crispy'],
+  },
+  {
+    id: 'kt-11',
+    name: 'Es Lemon Tea Sereh Madu',
+    category: 'minuman',
+    description: 'Teh melati wangi diseduh dengan perasan lemon asli, sirup sereh segar homemade dan tetesan madu alami. Segar pol!',
+    price: 12000,
+    formattedPrice: 'Rp 12.000',
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 0,
+    rating: 4.9,
+    salesCount: '3.1k+ terjual',
+    tags: ['Paling Segar', 'Minuman'],
+    options: [
+      {
+        name: 'Tingkat Manis & Es',
+        choices: [
+          { name: 'Normal Sugar & Normal Ice', extraPrice: 0 },
+          { name: 'Less Sugar (Sedang)', extraPrice: 0 },
+          { name: 'No Sugar (Tawar Segar)', extraPrice: 0 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'kt-12',
+    name: 'Kopi Susu Koh Timo Gula Aren',
+    category: 'minuman',
+    description: 'Espresso blend mantap berpadu susu segar creamy dan gula aren organik harum. Pas banget buat teman santai atau kerja.',
+    price: 16000,
+    formattedPrice: 'Rp 16.000',
+    image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80',
+    spiceLevel: 0,
+    rating: 4.9,
+    salesCount: '2.5k+ terjual',
+    tags: ['Kopi Favorit', 'Creamy Aren'],
+    options: [
+      {
+        name: 'Pilihan Es',
+        choices: [
+          { name: 'Es Normal', extraPrice: 0 },
+          { name: 'Less Ice', extraPrice: 0 },
+          { name: 'Hangat (Hot)', extraPrice: 0 },
+        ],
+      },
+    ],
+  },
+];
